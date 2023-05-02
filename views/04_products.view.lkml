@@ -14,7 +14,21 @@ view: products {
     label: "Category"
     sql: TRIM(${TABLE}.category) ;;
     drill_fields: [item_name]
-  }
+
+    action: {
+      label: "Send to Google sheet"
+      url: "https://docs.google.com/spreadsheets/d/1Cne6Zd-6d2Pp0Gx6t5S52pL29lM1AddDGyb5OIdtems/edit#gid=0"
+      param: {
+        name: "rpiccini@corebi.com.ar"
+        value: "picciro1"
+      }
+      form_param: {
+        name: "Subject"
+        required: yes
+        default: "Last Chance! 20% off {{ value }}"
+      }
+    } }
+
 
   dimension: item_name {
     label: "Item Name"
