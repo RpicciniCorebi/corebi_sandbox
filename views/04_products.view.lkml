@@ -19,7 +19,7 @@ view: products {
     action:  {
       label: "Open in Google Drive"
       icon_url: "https://www.gstatic.com/images/branding/product/1x/drive_48dp.png"
-      url: "https://drive.google.com/drive/folders/{{ value }}"
+      url: "https://drive.google.com/drive/my-drive/folders/{{ value }}"
     }}
 
 
