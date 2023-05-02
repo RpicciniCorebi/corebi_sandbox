@@ -72,7 +72,7 @@ view: order_items {
     sql: ${TABLE}.order_id ;;
     action: {
       label: "Send this to slack channel"
-      url: "https://hooks.zapier.com/hooks/catch/1662138/tvc3zj/"
+      url: "https://app.slack.com/client/T4X67JRK5/C4WGW2MGQ"
       param: {
         name: "user_dash_link"
         value: "/dashboards/ayalascustomerlookupdb?Email={{ users.email._value}}"
