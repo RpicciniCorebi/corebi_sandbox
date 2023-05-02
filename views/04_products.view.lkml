@@ -17,11 +17,11 @@ view: products {
 
     # Define the action
     action:  {
-      label: "Open in Google Drive"
-      icon_url: "https://www.gstatic.com/images/branding/product/1x/drive_48dp.png"
-      url: "https://drive.google.com/drive/my-drive/folders/{{ value }}"
-    }}
-
+      label: "Open in Google Sheets"
+      icon_url: "https://www.gstatic.com/images/branding/product/1x/sheets_48dp.png"
+      url: "https://docs.google.com/spreadsheets/d/{{ value }}"
+    }
+  }
 
   dimension: item_name {
     label: "Item Name"
