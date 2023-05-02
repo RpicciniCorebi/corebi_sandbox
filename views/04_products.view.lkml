@@ -19,7 +19,7 @@ view: products {
     action:  {
       label: "Open in Google Sheets"
       icon_url: "https://www.gstatic.com/images/branding/product/1x/sheets_48dp.png"
-      url: "https://docs.google.com/spreadsheets/d/{{ value }}"
+      url: "https://docs.google.com/spreadsheets/u/0/{{ value }}"
     }
   }
 
