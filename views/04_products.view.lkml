@@ -15,19 +15,12 @@ view: products {
     sql: TRIM(${TABLE}.category) ;;
     drill_fields: [item_name]
 
-    action: {
-      label: "Send to Google sheet"
-      url: "https://docs.google.com/spreadsheets/d/1Cne6Zd-6d2Pp0Gx6t5S52pL29lM1AddDGyb5OIdtems/edit#gid=0"
-      param: {
-        name: "rpiccini@corebi.com.ar"
-        value: "picciro1"
-      }
-      form_param: {
-        name: "Subject"
-        required: yes
-        default: "Last Chance! 20% off {{ value }}"
-      }
-    } }
+    # Define the action
+    action:  {
+      label: "Open in Google Drive"
+      icon_url: "https://www.gstatic.com/images/branding/product/1x/drive_48dp.png"
+      url: "https://drive.google.com/drive/folders/{{ value }}"
+    }}
 
 
   dimension: item_name {
