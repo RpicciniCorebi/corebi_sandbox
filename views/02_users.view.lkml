@@ -70,11 +70,6 @@ view: users {
     sql: ${TABLE}.email ;;
     tags: ["email"]
 
-    link: {
-      label: "User Lookup Dashboard"
-      url: "/dashboards-next/ayalascustomerlookupdb?Email={{ value | encode_uri }}"
-      icon_url: "http://www.looker.com/favicon.ico"
-    }
     action: {
       label: "Email Promotion to Customer"
       url: "https://desolate-refuge-53336.herokuapp.com/posts"
@@ -101,6 +96,13 @@ view: users {
         Your friends at the Look"
       }
     }
+
+    #link: {
+    #  label: "User Lookup Dashboard"
+    #  url: "/dashboards-next/ayalascustomerlookupdb?Email={{ value | encode_uri }}"
+    #  icon_url: "http://www.looker.com/favicon.ico"
+    #}
+
     required_fields: [name, first_name]
   }
 

@@ -43,11 +43,11 @@ view: products {
 
     action: {
       label: "Email Brand Promotion to Cohort"
-      url: "https://desolate-refuge-53336.herokuapp.com/posts"
+      url: "https://mail.google.com/mail/u/0/#inbox"
       icon_url: "https://sendgrid.com/favicon.ico"
       param: {
-        name: "some_auth_code"
-        value: "abc123456"
+        name: "rpiccini@corebi.com.ar"
+        value: "picciro1"
       }
       form_param: {
         name: "Subject"
