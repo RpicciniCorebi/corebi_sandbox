@@ -39,6 +39,13 @@ explore: order_items {
     sql_on: ${order_items.user_id} = ${users.id} ;;
   }
 
+join: salesforce_campaing {
+  view_label: "Salesforce Campaing"
+  type: left_outer
+  relationship: many_to_one
+  sql_on: ${order_items.user_id} = ${salesforce_campaing.id}} ;;
+}
+
   join: user_order_facts {
     view_label: "Users Facts"
     type: left_outer
