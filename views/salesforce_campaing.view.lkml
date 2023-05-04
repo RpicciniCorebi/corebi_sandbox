@@ -28,15 +28,15 @@ view: salesforce_campaing {
   dimension: email {
     description: ""
   }
-  dimension: total_sale_price {
+  measure: total_sale_price {
     description: ""
     value_format: "$#,##0.00"
-    type: number
+    type: sum
   }
-  dimension: total_gross_margin {
+  measure: total_gross_margin {
     description: ""
     value_format: "$#,##0.00"
-    type: number
+    type: sum
   }
 }
 
