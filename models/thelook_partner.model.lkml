@@ -111,7 +111,7 @@ explore: events {
   }
 
   join: session_landing_page {
-    view_label: "Session Landing Page"
+   view_label: "Session Landing Page"
     from: events
     type: left_outer
     sql_on: ${sessions.landing_event_id} = ${session_landing_page.event_id} ;;
@@ -136,7 +136,7 @@ explore: events {
     relationship: many_to_one
   }
 
-  join: users {
+ join: users {
     view_label: "Users"
     type: left_outer
     sql_on: ${sessions.session_user_id} = ${users.id} ;;
