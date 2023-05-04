@@ -25,9 +25,9 @@ view: users {
   }
 
   dimension: name {
-    tags: ["sfdc_contact_id", "sfdc_lead_id"]
     label: "Name"
     sql: concat(${first_name}, ' ', ${last_name}) ;;
+    tags: ["sfdc_contact_id", "sfdc_lead_id"]
   }
 
   dimension: age {
