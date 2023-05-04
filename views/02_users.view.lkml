@@ -8,7 +8,7 @@ view: users {
     primary_key: yes
     type: number
     sql: ${TABLE}.id ;;
-    tags: ["user_id"]
+    tags: ["user_id", "sfdc_contact_id", "sfdc_lead_id"]
   }
 
   dimension: first_name {
@@ -27,7 +27,7 @@ view: users {
   dimension: name {
     label: "Name"
     sql: concat(${first_name}, ' ', ${last_name}) ;;
-    tags: ["sfdc_contact_id", "sfdc_lead_id"]
+    tags: ["sfdc_contact_id"]
   }
 
   dimension: age {
