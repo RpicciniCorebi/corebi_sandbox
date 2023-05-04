@@ -43,7 +43,7 @@ join: salesforce_campaing {
   view_label: "Salesforce Campaing"
   type: left_outer
   relationship: many_to_one
-  sql_on: ${order_items.user_id} = ${salesforce_campaing.id}} ;;
+  sql_on: ${order_items.user_id} = ${salesforce_campaing.id} ;;
 }
 
   join: user_order_facts {
