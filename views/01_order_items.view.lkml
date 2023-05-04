@@ -262,6 +262,7 @@ view: order_items {
   }
 
   dimension: gross_margin {
+    tags: ["sfdc_contact_id", "sfdc_lead_id"]
     label: "Gross Margin"
     type: number
     value_format_name: usd
