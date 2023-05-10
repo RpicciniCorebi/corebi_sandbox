@@ -7,7 +7,8 @@
   filters:
 
   elements:
-    - name: hello_world
+    - title: prueba_sdk
+      name: hello_world
       model: thelook_partner
       explore: order_items
       type: single_value
