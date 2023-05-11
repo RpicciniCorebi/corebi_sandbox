@@ -3,6 +3,11 @@ view: users {
   view_label: "Users"
   ## Demographics ##
 
+  dimension: action {
+    type: string
+
+  }
+
   dimension: id {
     label: "ID"
     primary_key: yes
