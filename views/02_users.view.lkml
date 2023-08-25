@@ -25,6 +25,14 @@ view: users {
     sql: CONCAT(UPPER(SUBSTR(${TABLE}.last_name,1,1)), LOWER(SUBSTR(${TABLE}.last_name,2))) ;;
   }
 
+  dimension: button {
+    sql: 'Button'
+    link: {
+      label: "My Link"
+      url: "/look/<50>?f[Nombre.Nombre]=_filters['users.name']"
+    }
+  }
+
   dimension: name {
     label: "Name"
     sql: concat(${first_name}, ' ', ${last_name}) ;;
