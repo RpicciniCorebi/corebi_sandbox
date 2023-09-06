@@ -43,8 +43,9 @@ view: products {
       icon_url: "https://upload.wikimedia.org/wikipedia/commons/c/c2/F_icon.svg"
     }
     link: {
-      label: "{{value}} Analytics Dashboard"
-      url: "/dashboards-next/CRMxoGiGJUv4eGALMHiAb0?Brand%20Name={{ value | encode_uri }}"
+      label: "{{value}} Brand Lookup Dashboard"
+
+      url: "https://corebipartner.cloud.looker.com/dashboards/thelook_partner::brand_lookup?Brand%20Name={{ value | encode_uri }}&Date=90%20days&State="
       icon_url: "https://www.svgrepo.com/show/354012/looker-icon.svg"
     }
 
