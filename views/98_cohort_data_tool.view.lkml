@@ -10,7 +10,7 @@ explore: cohorts {
   label: "Cohort Data Tool"
   view_name: cohort_size
   join: users {
-    fields: [users.id, users.name, users.first_name, users.last_name, users.email, users.age, users.created_date, users.gender, users.traffic_source, users.count]
+    fields: [users.id, users.last_name, users.first_name, users.last_name, users.email, users.age, users.created_date, users.gender, users.traffic_source, users.count]
     type: left_outer
     relationship: many_to_one
     sql_on:

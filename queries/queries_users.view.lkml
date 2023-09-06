@@ -33,7 +33,7 @@ include: "/views/**/*.view" # include all the views
   explore: +order_items {
     aggregate_table: rollup__users_name {
       query: {
-        dimensions: [users.name]
+        dimensions: [users.last_name]
         measures: [count, total_gross_margin, total_sale_price]
         timezone: "America/Los_Angeles"
       }

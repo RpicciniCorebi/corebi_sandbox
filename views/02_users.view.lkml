@@ -25,13 +25,13 @@ view: users {
     sql: CONCAT(UPPER(SUBSTR(${TABLE}.last_name,1,1)), LOWER(SUBSTR(${TABLE}.last_name,2))) ;;
   }
 
-  dimension: button {
-    sql: 'Button'
-    link: {
-      label: "My Link"
-      url: "/look/<50>?f[Nombre.Nombre]=_filters['users.name']"
-    }
-  }
+#  dimension: button {
+#    sql: 'Button'
+#    link: {
+#      label: "My Link"
+#      url: "/look/<50>?f[Nombre.Nombre]=_filters['users.name']"
+#    }
+#  }
 
   dimension: name {
     label: "Name"
@@ -113,7 +113,7 @@ view: users {
     #  icon_url: "http://www.looker.com/favicon.ico"
     #}
 
-    required_fields: [name, first_name]
+    required_fields: [last_name, first_name]
   }
 
   dimension: image_file {
@@ -258,6 +258,6 @@ view: users {
   }
 
   set: detail {
-    fields: [id, name, email, age, created_date, orders.count, order_items.count]
+    fields: [id, last_name, email, age, created_date, orders.count, order_items.count]
   }
 }

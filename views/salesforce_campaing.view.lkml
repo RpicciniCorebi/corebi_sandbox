@@ -3,7 +3,7 @@ view: salesforce_campaing {
   derived_table: {
     explore_source: order_items {
       column: id { field: users.id }
-      column: name { field: users.name }
+      column: name { field: users.last_name }
       column: gender { field: users.gender }
       column: email { field: users.email }
       column: total_sale_price {}
